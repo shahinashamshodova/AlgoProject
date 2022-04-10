@@ -14,8 +14,9 @@ If later on we wanted to add a new vertex this would require O(Vˆ2) time, howev
 
 I decided to use Dijkstra, because:
 
-    * Floyd-Warshall solves all pairs shortest path problem, but bus routes change often, so precomputing data regularly using Floyd-Warshall (O(Vˆ3)) and putting it into some sort of cache may result in many caches entries being invalid.
-    * Bellman-Ford solves same problem as dijkstra, but can also work with negative edges. However, given the context of the problem there cannot be negative edges between stops.
+Floyd-Warshall solves all pairs shortest path problem, but bus routes change often, so precomputing data regularly using Floyd-Warshall (O(Vˆ3)) and putting it into some sort of cache may result in many caches entries being invalid.
+
+Bellman-Ford solves same problem as dijkstra, but can also work with negative edges. However, given the context of the problem there cannot be negative edges between stops.
 
 My implementation of Dijkstra is using array as priority queue, so the complexity is O(Vˆ2). With min binary heap, we could get O(V + ELogV) and assuming E >> V, O(ELogV). 
 
@@ -36,11 +37,3 @@ Since there are many data fields for each trip, we use the in-built java sort, w
 ### UI
 
 I used simple command line application as UI, it allows to query all of the 3 functionalities described above as well as provides error handling.
-
-
-
-
-
-
-
-
