@@ -1,5 +1,6 @@
 # AlgoProject
 
+The aim of this project was to apply graph algorithms to find shortest paths in a transport network of Vancouver. 
 ### Shortest Path Functionality 
 
 I decided to use Dijkstra with Adjacency Matrix Graph Representation.
