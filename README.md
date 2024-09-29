@@ -1,6 +1,10 @@
 # AlgoProject
 
-The aim of this project was to apply graph algorithms to find shortest paths in a transport network of Vancouver. 
+The aim of this project was to apply graph algorithms to:
+* find shortest paths in the transport network of Vancouver
+* efficiently search bus stop names
+* efficiently search for trips given an arrival time
+  
 ### Shortest Path Functionality 
 
 I decided to use Dijkstra with Adjacency Matrix Graph Representation.
